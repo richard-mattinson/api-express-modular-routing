@@ -66,5 +66,5 @@ const users = [
 module.exports = {
   books: books,
   films: films,
-  users: users
+  // users: users
 }
