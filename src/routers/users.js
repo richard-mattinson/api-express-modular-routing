@@ -46,6 +46,7 @@ usersRouter.delete("/:id", (request, response) => {
 usersRouter.put("/:id", (request, response) => {
   const oldUser = users.find((user) => user.id === Number(request.params.id));
   console.log("USER CHANGE!");
+  
   const index = users.indexOf(oldUser);
 
   users.splice(index, 1, { ...request.body, id: oldUser.id });
